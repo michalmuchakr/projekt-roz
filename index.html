@@ -1,95 +1,642 @@
-
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<html lang='en'>
 
-    <title>Starter Template for Bootstrap</title>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+  <meta name='description' content=''>
+  <meta name='author' content=''>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous">
-  </head>
+  <title>Starter Template for Bootstrap</title>
 
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button"
-        data-toggle="collapse"
-        data-target="#navbarsExampleDefault"
-        aria-controls="navbarsExampleDefault"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="styles/owl.carousel.min.css">
+  <link rel="stylesheet" href="styles/owl.theme.default.min.css">
+
+  <!-- fonts -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css'
+    integrity='sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=' crossorigin='anonymous' />
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:700&display=swap' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700&display=swap' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:600,700&display=swap' rel='stylesheet'>
+
+  <!-- Bootstrap core CSS -->
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
+    integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
+
+  <link rel='stylesheet' href='styles/common.css'>
+</head>
+
+<body>
+
+  <main class='page-main-content'>
+    <nav class='navbar navbar-expand-md navbar-dark bg-dark p-0'>
+      <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarsExampleDefault'
+        aria-controls='navbarsExampleDefault' aria-expanded='false' aria-label='Toggle navigation'>
+        <span class='navbar-toggler-icon'></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle"
-              href="http://example.com"
-              id="dropdown01"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+      <div class='collapse navbar-collapse col-10 m-auto px-0' id='navbarsExampleDefault'>
+        <ul class='navbar-nav mr-auto'>
+          <li class='nav-item active'>
+            <a class='nav-link' href='#'>Projekt ROZ <span class='sr-only'>(current)</span></a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
       </div>
     </nav>
 
-    <main class="col-lg-10 col-12 mx-auto">
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> 
-          All you get is this text and a mostly barebones HTML document.</p>
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+    <section class='main-page-top'>
+      <div class='top-first-section col-lg-10 col-12 mx-auto'>
+        <div class='row'>
+          <div class='top-slider col-12'>
+            <div id='topCarousel' class='carousel slide px-0' data-ride='carousel'>
+              <a class='carousel-control-prev' href='#topCarousel' role='button' data-slide='prev'>
+                <span class='fas fa-angle-left'></span>
+                <span class='sr-only'>Previous</span>
+              </a>
+              <div class='carousel-inner'>
+                <div class='carousel-item active'>
+                  <h2 class='carousel-txt'>
+                    'Tobie nie wolno zapomnieć. Stajesz się odpowiedzialny na zawsze za to, co oswoiłeś (…)”.
+                  </h2>
+                </div>
+                <div class='carousel-item'>
+                  <h2 class='carousel-txt'>
+                    'Tobie nie wolno zapomnieć. Stajesz się odpowiedzialny na zawsze za to, co oswoiłeś (…)”.
+                  </h2>
+                </div>
+                <div class='carousel-item'>
+                  <h2 class='carousel-txt'>
+                    'Tobie nie wolno zapomnieć. Stajesz się odpowiedzialny na zawsze za to, co oswoiłeś (…)”.
+                  </h2>
+                </div>
+              </div>
+              <a class='carousel-control-next' href='#topCarousel' role='button' data-slide='next'>
+                <span class='fas fa-angle-right'></span>
+                <span class='sr-only'>Next</span>
+              </a>
+              <ol class='carousel-indicators'>
+                <li data-target='#topCarousel' data-slide-to='0' class='active'></li>
+                <li data-target='#topCarousel' data-slide-to='1'></li>
+                <li data-target='#topCarousel' data-slide-to='2'></li>
+              </ol>
             </div>
           </div>
+        </div>
       </div>
 
-    </main><!-- /.container -->
+      <div class='top-second-section col-lg-10 col-12 px-0 mx-auto'>
+        <div class='row mt-4'>
+          <div class='quotes col-4'>
+            <div class='card w-100'>
+              <div class='card-body d-flex align-items-center pl-0'>
+                <p class='card-text'>
+                  „Mamy większe domy, lecz mniejsze rodziny.<br>
+                  Więcej możliwości, lecz mniej czasu.<br>
+                  Mamy więcej tytułów, lecz mniej rozsądku.<br>
+                  Więcej wiedzy, lecz mniej zdrowej oceny sytuacji.”
+                </p>
+              </div>
+              <div class='card-footer'>
+                <p class='card-footer-link card-footer-additional-info text-right'>
+                  Tybetański przywódca polityczny i religijny.
+                </p>
+                <p class='card-footer-link card-footer-who text-right'>
+                  Dalajlama, Tenzin Gjaco
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class='top-cards col-8'>
+            <div class='row'>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous">
+              <div class='col'>
+                <div class='card'>
+                  <div class='card-goals card-header'>
+                    <div class='card-title px-4 py-2'>
+                      <h5 class='card-title-txt'>
+                        <!-- <i class='far fa-question-circle'></i> -->
+                        O nas
+                      </h5>
+                    </div>
+                  </div>
+                  <div class='card-body p-4'>
+                    <p class='card-text'>
+                      Od 2005 roku prowadzimy Rodzinny Dom Dziecka 'Mały Książę' przy Al. Modrzewiowej 25 w Krakowie.
+                      Wraz z nami i 4 naszych biologicznych dzieci mieszka obecnie 8 dzieci powierzonych naszej opiece.
+                    </p>
+                    <a href='#' class='top-card-button btn btn-primary btn-roz btn-roz-solid'>
+                      Go somewhere
+                    </a>
+                  </div>
+                  <div class='card-footer'>
+                    Poznaj nas bliżej, kim jesteśmy...
+                  </div>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='card'>
+                  <div class='card-about card-header'>
+                    <div class='card-title px-4 py-2'>
+                      <h5 class='card-title-txt'>
+                        <!-- <i class='far fa-compass'></i> -->
+                        Nasze cele
+                      </h5>
+                    </div>
+                  </div>
+                  <div class='card-body p-4'>
+                    <p class='card-text'>
+                      Jako Fundacja, chcemy propagować rodzinną opiekę zastępczą, mówić o tym ważnym, a jednak mało
+                      znanym działaniu.
+                      Informować, kto i dlaczego zajmuje się dziećmi porzuconymi.
+                    </p>
+                    <a href='#' class='top-card-button btn btn-primary btn-roz btn-roz-solid'>
+                      Go somewhere
+                    </a>
+                  </div>
+                  <div class='card-footer'>
+                    Nasza misja, którą realizujemy...
+                  </div>
+                </div>
+              </div>
+              <div class='col'>
+                <div class='card'>
+                  <div class='card-projects card-header'>
+                    <div class='card-title px-4 py-2'>
+                      <h5 class='card-title-txt'>
+                        <!-- <i class='fas fa-tasks'></i> -->
+                        Projekty
+                      </h5>
+                    </div>
+                  </div>
+                  <div class='card-body p-4'>
+                    <p class='card-text'>
+                      Chcemy wskazywać, jakie kompetencje powinni posiadać opiekunowie zastępczy,
+                      jak i kto powinien współpracować z nimi i wspierać.
+                      Edukować w tym zakresie służby działające na rzecz dzieci.
+                    </p>
+                    <a href='#' class='top-card-button btn btn-primary btn-roz btn-roz-solid'>
+                      Go somewhere
+                    </a>
+                  </div>
+                  <div class='card-footer'>
+                    Projekty, które wspólnie tworzymy...
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class='main-page-bottom'>
+
+      <div class='roz-content-lists col-10 mx-auto mt-4'>
+        <div class='row'>
+          <div class='col-4'>
+            <div class='card w-100' style='width: 18rem;'>
+              <div class='card-body'>
+                <h5 class='card-title'>Card title</h5>
+                <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+              <ul class='list-group list-group-flush'>
+                <li class='list-group-item p-0'>
+                  <div class='roz-list-card card border-0 m-0' style='max-width: 540px;'>
+                    <div class='row no-gutters'>
+                      <div class='roz-content-lists-icon d-flex justify-content-center align-items-center'>
+                        <span class='roz-content-lists-icon-img fas fa-award'></span>
+                      </div>
+                      <div class='col'>
+                        <div class='card-body p-2'>
+                          <h5 class='card-title mb-2'>
+                            Card title
+                          </h5>
+                          <p class='card-text'>
+                            <small class='text-muted'>
+                              Last updated 3 mins ago Last updated 3 mins ago Last updated 3 mins ago Last updated 3
+                              mins ago mins ago mins ago
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class='list-group-item p-0'>
+                  <div class='roz-list-card card border-0 m-0' style='max-width: 540px;'>
+                    <div class='row no-gutters'>
+                      <div class='roz-content-lists-icon d-flex justify-content-center align-items-center'>
+                        <span class='roz-content-lists-icon-img fas fa-award'></span>
+                      </div>
+                      <div class='col'>
+                        <div class='card-body p-2'>
+                          <h5 class='card-title mb-2'>
+                            Card title
+                          </h5>
+                          <p class='card-text'>
+                            <small class='text-muted'>
+                              Last updated 3 mins ago Last updated 3 mins ago Last updated 3 mins ago Last updated 3
+                              mins ago mins ago mins ago
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class='list-group-item p-0'>
+                  <div class='roz-list-card card border-0 m-0' style='max-width: 540px;'>
+                    <div class='row no-gutters'>
+                      <div class='roz-content-lists-icon d-flex justify-content-center align-items-center'>
+                        <span class='roz-content-lists-icon-img fas fa-award'></span>
+                      </div>
+                      <div class='col'>
+                        <div class='card-body p-2'>
+                          <h5 class='card-title mb-2'>
+                            Card title
+                          </h5>
+                          <p class='card-text'>
+                            <small class='text-muted'>
+                              Last updated 3 mins ago Last updated 3 mins ago Last updated 3 mins ago Last updated 3
+                              mins ago mins ago mins ago
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class='card-footer mt-2 p-0 d-flex justify-content-between align-items-center'>
+                <a href='' class='top-card-button btn-block btn btn-primary btn-roz rounded-0'>
+                  Go to List Page
+                </a>
+                <nav aria-label='Pagination'>
+                  <ul class='pagination mb-0'>
+                    <li class='page-item'>
+                      <a class='page-link d-flex justify-content-center align-items-center' href='#'
+                        aria-label='Previous'>
+                        <span aria-hidden='true' class="fas fa-angle-left"></span>
+                      </a>
+                    </li>
+                    <li class='page-item'>
+                      <a class='page-link d-flex justify-content-center align-items-center' href='#' aria-label='Next'>
+                        <span aria-hidden='true' class="fas fa-angle-right"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+
+          <div class='col-4'>
+            <div class='card w-100' style='width: 18rem;'>
+              <div class='card-body'>
+                <h5 class='card-title'>Card title</h5>
+                <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+              <ul class='list-group list-group-flush'>
+                <li class='list-group-item p-0'>
+                  <div class='roz-list-card card border-0 m-0' style='max-width: 540px;'>
+                    <div class='row no-gutters'>
+                      <div class='roz-content-lists-icon d-flex justify-content-center align-items-center'>
+                        <span class='roz-content-lists-icon-img fas fa-award'></span>
+                      </div>
+                      <div class='col'>
+                        <div class='card-body p-2'>
+                          <h5 class='card-title mb-2'>
+                            Card title
+                          </h5>
+                          <p class='card-text'>
+                            <small class='text-muted'>
+                              Last updated 3 mins ago Last updated 3 mins ago Last updated 3 mins ago Last updated 3
+                              mins ago mins ago mins ago
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class='list-group-item p-0'>
+                  <div class='roz-list-card card border-0 m-0' style='max-width: 540px;'>
+                    <div class='row no-gutters'>
+                      <div class='roz-content-lists-icon d-flex justify-content-center align-items-center'>
+                        <span class='roz-content-lists-icon-img fas fa-award'></span>
+                      </div>
+                      <div class='col'>
+                        <div class='card-body p-2'>
+                          <h5 class='card-title mb-2'>
+                            Card title
+                          </h5>
+                          <p class='card-text'>
+                            <small class='text-muted'>
+                              Last updated 3 mins ago Last updated 3 mins ago Last updated 3 mins ago Last updated 3
+                              mins ago mins ago mins ago
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class='list-group-item p-0'>
+                  <div class='roz-list-card card border-0 m-0' style='max-width: 540px;'>
+                    <div class='row no-gutters'>
+                      <div class='roz-content-lists-icon d-flex justify-content-center align-items-center'>
+                        <span class='roz-content-lists-icon-img fas fa-award'></span>
+                      </div>
+                      <div class='col'>
+                        <div class='card-body p-2'>
+                          <h5 class='card-title mb-2'>
+                            Card title
+                          </h5>
+                          <p class='card-text'>
+                            <small class='text-muted'>
+                              Last updated 3 mins ago Last updated 3 mins ago Last updated 3 mins ago Last updated 3
+                              mins ago mins ago mins ago
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class='card-footer mt-2 p-0 d-flex justify-content-between align-items-center'>
+                <a href='' class='top-card-button btn-block btn btn-primary btn-roz rounded-0'>
+                  Go to List Page
+                </a>
+                <nav aria-label='Pagination'>
+                  <ul class='pagination mb-0'>
+                    <li class='page-item'>
+                      <a class='page-link d-flex justify-content-center align-items-center' href='#'
+                        aria-label='Previous'>
+                        <span aria-hidden='true' class="fas fa-angle-left"></span>
+                      </a>
+                    </li>
+                    <li class='page-item'>
+                      <a class='page-link d-flex justify-content-center align-items-center' href='#' aria-label='Next'>
+                        <span aria-hidden='true' class="fas fa-angle-right"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class='col-4'>
+            <div class='card w-100' style='width: 18rem;'>
+              <div class='card-body'>
+                <h5 class='card-title'>Card title</h5>
+                <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+              <ul class='list-group list-group-flush'>
+                <li class='list-group-item p-0'>
+                  <div class='roz-list-card card border-0 m-0' style='max-width: 540px;'>
+                    <div class='row no-gutters'>
+                      <div class='roz-content-lists-icon d-flex justify-content-center align-items-center'>
+                        <span class='roz-content-lists-icon-img fas fa-award'></span>
+                      </div>
+                      <div class='col'>
+                        <div class='card-body p-2'>
+                          <h5 class='card-title mb-2'>
+                            Card title
+                          </h5>
+                          <p class='card-text'>
+                            <small class='text-muted'>
+                              Last updated 3 mins ago Last updated 3 mins ago Last updated 3 mins ago Last updated 3
+                              mins ago mins ago mins ago
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class='list-group-item p-0'>
+                  <div class='roz-list-card card border-0 m-0' style='max-width: 540px;'>
+                    <div class='row no-gutters'>
+                      <div class='roz-content-lists-icon d-flex justify-content-center align-items-center'>
+                        <span class='roz-content-lists-icon-img fas fa-award'></span>
+                      </div>
+                      <div class='col'>
+                        <div class='card-body p-2'>
+                          <h5 class='card-title mb-2'>
+                            Card title
+                          </h5>
+                          <p class='card-text'>
+                            <small class='text-muted'>
+                              Last updated 3 mins ago Last updated 3 mins ago Last updated 3 mins ago Last updated 3
+                              mins ago mins ago mins ago
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class='list-group-item p-0'>
+                  <div class='roz-list-card card border-0 m-0' style='max-width: 540px;'>
+                    <div class='row no-gutters'>
+                      <div class='roz-content-lists-icon d-flex justify-content-center align-items-center'>
+                        <span class='roz-content-lists-icon-img fas fa-award'></span>
+                      </div>
+                      <div class='col'>
+                        <div class='card-body p-2'>
+                          <h5 class='card-title mb-2'>
+                            Card title
+                          </h5>
+                          <p class='card-text'>
+                            <small class='text-muted'>
+                              Last updated 3 mins ago Last updated 3 mins ago Last updated 3 mins ago Last updated 3
+                              mins ago mins ago mins ago
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class='card-footer mt-2 p-0 d-flex justify-content-between align-items-center'>
+                <nav class="pagination mb-0 w-100" aria-label='Pagination'>
+                  <ul class='pagination mb-0 w-100'>
+                    <li class='page-item'>
+                      <a class='page-link d-flex justify-content-center align-items-center' href='#'
+                        aria-label='Previous'>
+                        <span aria-hidden='true' class="fas fa-angle-left"></span>
+                      </a>
+                    </li>
+                    <li class='page-item w-100'>
+                      <a href='' class='top-card-button btn-block btn btn-primary btn-roz rounded-0'>
+                        Go to List Page
+                      </a>
+                    </li>
+                    <li class='page-item'>
+                      <a class='page-link d-flex justify-content-center align-items-center' href='#' aria-label='Next'>
+                        <span aria-hidden='true' class="fas fa-angle-right"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="owl-carousel owl-theme friends-carousel">
+        <div class="item">
+          <h4>1</h4>
+        </div>
+        <div class="item">
+          <h4>2</h4>
+        </div>
+        <div class="item">
+          <h4>3</h4>
+        </div>
+        <div class="item">
+          <h4>4</h4>
+        </div>
+        <div class="item">
+          <h4>5</h4>
+        </div>
+        <div class="item">
+          <h4>6</h4>
+        </div>
+        <div class="item">
+          <h4>7</h4>
+        </div>
+        <div class="item">
+          <h4>8</h4>
+        </div>
+        <div class="item">
+          <h4>9</h4>
+        </div>
+        <div class="item">
+          <h4>10</h4>
+        </div>
+        <div class="item">
+          <h4>11</h4>
+        </div>
+        <div class="item">
+          <h4>12</h4>
+        </div>
+      </div>
+      <footer class='footer pt-3'>
+        <div class='col-10 m-auto'>
+          <div class='row'>
+            <div class='col-2'>
+              <ul class='footer-list-group list-group list-group-flush'>
+                <li class='list-group-item p-1 pl-3'>
+                  <a class='footer-link' href=''>
+                    Fundacja
+                  </a>
+                </li>
+                <li class='list-group-item p-1 pl-3'>
+                  <a class='footer-link' href=''>
+                    Programy oraz projekty
+                  </a>
+                </li>
+                <li class='list-group-item p-1 pl-3'>
+                  <a class='footer-link' href=''>
+                    Pozytywna propaganda
+                  </a>
+                </li>
+                <li class='list-group-item p-1 pl-3'>
+                  <a class='footer-link' href=''>
+                    Wydarzenia
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class='col-2'>
+              <ul class='footer-list-group list-group list-group-flush'>
+                <li class='list-group-item p-1 pl-3'>
+                  <a class='footer-link' href=''>
+                    Wesprzyj nas
+                  </a>
+                </li>
+                <li class='list-group-item p-1 pl-3'>
+                  <a class='footer-link' href=''>
+                    Podaruj 1%
+                  </a>
+                </li>
+                <li class='list-group-item p-1 pl-3'>
+                  <a class='footer-link' href=''>
+                    O nas
+                  </a>
+                </li>
+                <li class='list-group-item p-1 pl-3'>
+                  <a class='footer-link' href=''>
+                    Kontakt
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class='col-4 d-flex justify-content-center align-items-center'>
+              <img class='img-fluid mb-4' src='img/logo.png' alt=''>
+            </div>
+            <div class='col-4'>
+              <p class='footer-txt'>
+                Projekt „Mały Książę” jest realizowany ze środków Gminy Miejskiej Kraków
+                – zadanie publiczne pod tytułem „Prowadzenie w okresie od 01.01.2018 r do 30.11.2020 r
+                w lokalu Gminy Miejskiej Kraków placówki opiekuńczo – wychowawczej typu rodzinnego dla 8 wychowanków”.
+              </p>
+              <p class='footer-txt'>
+                Umowa W/I/3741/SO/342/2017
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-social col-12 mt-3">
+          <div class="row">
+
+            <div class="footer-social-item col-3 p-3 d-flex justify-content-center align-items-center">
+              <span class="footer-social-item-ico fab fa-facebook-square pr-3"></span>
+              <span class="footer-social-txt">Some link</span>
+            </div>
+
+            <div class="footer-social-item col-3 p-3 d-flex justify-content-center align-items-center">
+              <span class="footer-social-item-ico fab fa-facebook-square pr-3"></span>
+              <span class="footer-social-txt">Some link</span>
+            </div>
+
+            <div class="footer-social-item col-3 p-3 d-flex justify-content-center align-items-center">
+              <span class="footer-social-item-ico fab fa-facebook-square pr-3"></span>
+              <span class="footer-social-txt">Some link</span>
+            </div>
+
+            <div class="footer-social-item col-3 p-3 d-flex justify-content-center align-items-center">
+              <span class="footer-social-item-ico fab fa-facebook-square pr-3"></span>
+              <span class="footer-social-txt">Some link</span>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+    </section>
+
+  </main>
+
+
+
+  <!-- owl carousel -->
+  <!-- Bootstrap core JavaScript -->
+  <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'
+    integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous'>
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  <script src="js/owl.carousel.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'
+    integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous'>
     </script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+  <script src='js/bootstrap.min.js'></script>
+  <script src="js/common.js"></script>
+</body>
+
 </html>
