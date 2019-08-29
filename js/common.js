@@ -1,12 +1,13 @@
 $(document).ready(function () {
   (function () {
     const commonController = {
+      dropDown: $('.dropdown-menu'),
       friendsCarousel: $('.friends-carousel'),
       navigation: $('.navbar'),
       slideItem: $(".slide-item"),
       html: $('html'),
 
-      sectionsIdsArray: ['our-activity', 'calendar', 'friends'],
+      sectionsIdsArray: ['our-activity', 'friends'],
       sectionsTopPositionArray: [],
 
       topPosition: 0,
@@ -44,9 +45,13 @@ $(document).ready(function () {
       bindScerollEvent: function () {
         const that = this;
         $(window).on('scroll', function () {
-          that.topPosition = that.html.scrollTop();
-          that.changeNavPosition();
+          that.proccedScrollPositionCalculation();
         });
+      },
+
+      proccedScrollPositionCalculation: function () {
+        this.topPosition = this.html.scrollTop();
+        this.changeNavPosition();
       },
 
       getSectionPositions: function () {
@@ -98,11 +103,19 @@ $(document).ready(function () {
       },
 
 
+      bindRwdDropdownToggle: function () {
+        this.dropDown.on('click', function (e) {
+          $(e).toggleClass('expanded');
+        })
+      },
+
       init: function () {
         this.initCarousel();
         this.getSectionPositions();
         this.bindScerollEvent();
+        this.proccedScrollPositionCalculation();
         this.scrollToSection();
+        this.bindRwdDropdownToggle();
       }
     }
     commonController.init();
