@@ -1,0 +1,31 @@
+.list-page .top-first-section {
+  height: 148px;
+  background-image: url(../img/roz-bg.jpeg);
+  background-position-y: 53%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: auto;
+}
+
+.list-page .main-page-top {
+  overflow: visible;
+}
+
+.list-page .calendar {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.list-page .top-list-section {
+  border-bottom: 2px solid #f3f3f3;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.list-page .our-activity .our-activity-list-card .card-body .more-info-btn {
+  right: -25px;
+}
+
+.list-page .our-activity .our-activity-list-card:hover .card-body .more-info-btn {
+  right: 0;
+}

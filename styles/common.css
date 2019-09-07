@@ -1838,30 +1838,7 @@ nav {
   box-shadow: 0px 0px 20px 0px rgb(149, 197, 222);
 }
 
-.calendar::before {
-  content: '';
-  width: 200vw;
-  height: 250px;
-  position: absolute;
-  left: -200px;
-  background: #61a2c6;
-  top: 335px;
-}
-
-.calendar::after {
-  content: '';
-  width: 200vw;
-  height: 250px;
-  position: absolute;
-  left: -500px;
-  background: #77b3d4;
-  top: 447px;
-  z-index: -1;
-  transform: rotate(7deg);
-}
-
 .calendar .roz-title {
-  /* margin-top: -41px; */
   margin-bottom: 150px;
 }
 
@@ -1929,7 +1906,7 @@ nav {
   border-radius: 3px;
 }
 
-.calendar-card .roz-content-lists-date {
+.roz-content-lists-date {
   max-width: 85px;
   width: 85px;
   height: 90px;
@@ -1940,19 +1917,19 @@ nav {
   border-bottom-right-radius: 20px;
 }
 
-.calendar-card .roz-content-lists-date .day {
+.roz-content-lists-date .day {
   font-size: 25px;
   line-height: 36px;
   color: #5E5E5E;
 }
 
-.calendar-card .roz-content-lists-date .month {
+.roz-content-lists-date .month {
   font-size: 11px;
   line-height: 11px;
   color: #5E5E5E;
 }
 
-.calendar-card .roz-content-lists-date .year {
+.roz-content-lists-date .year {
   font-size: 12px;
   line-height: 24px;
   position: absolute;
@@ -1996,13 +1973,13 @@ nav {
   color: #5e5e5e;
 }
 
-.calendar-card .roz-content-lists-date {
+.roz-content-lists-date {
   font-family: 'Comfortaa', cursive;
   background: #F3F3F3;
   box-shadow: 0 3px 5px -1px #adb5bd;
 }
 
-.calendar .calendar-main-card .year {
+.calendar-main-card .year {
   font-size: 20px;
   line-height: 45px;
 }
@@ -2429,6 +2406,51 @@ nav {
   position: absolute;
   top: 129px;
   right: 75px;
+}
+
+.form-control {
+  background: transparent;
+}
+
+nav {
+  background: transparent;
+}
+
+.breadcrumb {
+  background: transparent;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 0px 20px;
+}
+
+.roz-select select {
+  border: 0 !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-overflow: "";
+  width: 200px;
+}
+
+.roz-select select::-ms-expand {
+  display: none;
+}
+
+.pagination .page-link {
+  font-size: 13px;
+  font-family: 'Roboto Condensed', sans-serif;
+  background: transparent;
+  border: none;
+  color: #5e5e5e;
+  transition: all .3s linear;
+}
+
+.pagination .page-link:hover {
+  color: #5e5e5e;
+  background-color: #f3f3f3;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
 }
 
 @-webkit-keyframes spin {

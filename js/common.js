@@ -57,7 +57,10 @@ $(document).ready(function () {
       getSectionPositions: function () {
         const tempArr = [0];
         this.sectionsIdsArray.forEach(function (sectionItem) {
-          tempArr.push(Math.floor($("section#" + sectionItem).offset().top));
+          const tempSection = $("section#" + sectionItem);
+          if (tempSection.length) {
+            tempArr.push(Math.floor($("section#" + sectionItem).offset().top));
+          }
         });
         this.sectionsTopPositionArray = tempArr;
       },
