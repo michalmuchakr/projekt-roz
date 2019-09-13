@@ -406,6 +406,11 @@ nav {
   position: relative;
 }
 
+.navbar-top-section .logo-box .logo-box-link {
+  height: 81px;
+  display: inline-block;
+}
+
 .navbar-top-section .logo-box .logo-img {
   max-width: 160px;
   width: 100%;
@@ -528,14 +533,16 @@ nav {
   }
 }
 
-.our-activity .propaganda-card .our-activity-list-card .card-body {
+.propaganda-card .our-activity-list-card .card-body {
   height: 68px;
   box-sizing: border-box;
   padding: 7px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-
-.our-activity .propaganda-card .our-activity-card .our-activity-list-card .card-title {
+.propaganda-card .our-activity-card .our-activity-list-card .card-title {
   margin-bottom: 0px !important;
 }
 
@@ -558,25 +565,25 @@ nav {
   align-items: center;
 }
 
-.our-activity .propaganda-card .our-activity-list-card .card-body .more-info-btn {
+.propaganda-card .our-activity-list-card .card-body .more-info-btn {
   bottom: 6px;
 }
 
-.our-activity .our-activity-list-card:hover .card-body .more-info-btn {
+.our-activity-list-card:hover .card-body .more-info-btn {
   right: 19px;
 }
 
-.our-activity .our-activity-list-card .card-body .more-info-btn .fas {
+.our-activity-list-card .card-body .more-info-btn .fas {
   font-size: 13px;
 }
 
-.our-activity .our-activity-list-card .card-text {
+.our-activity-list-card .card-text {
   line-height: 19px;
   font-size: 14px;
   color: #7d7b84;
 }
 
-.our-activity .our-activity-card {
+.our-activity-card {
   border: none;
   background: transparent;
   max-width: 650px;
@@ -1042,7 +1049,7 @@ nav {
   }
 }
 
-.our-activity .our-activity-list-card {
+.our-activity-list-card {
   background: transparent;
   overflow: hidden;
   border-radius: 10px;
@@ -1052,7 +1059,7 @@ nav {
   text-decoration: none;
 }
 
-.our-activity .our-activity-list-card .our-activity-list-card-ico {
+.our-activity-list-card-ico {
   width: 74px;
   height: 74px;
   background: #ececec;
@@ -1068,16 +1075,15 @@ nav {
   background: #76c2af;
 }
 
-.our-activity .our-activity-list-card .our-activity-list-card-ico img {
+.our-activity-list-card .our-activity-list-card-ico img {
   position: absolute;
   bottom: -15px;
   right: -20px;
   transform: rotate(-23deg);
-  width: 200px;
   max-width: 80px;
 }
 
-.our-activity .our-activity-card .our-activity-list-card .card-title {
+.our-activity-list-card .card-title {
   font-size: 18px;
   margin-bottom: 8px !important;
   font-family: 'Roboto Condensed', sans-serif;
@@ -2419,19 +2425,38 @@ nav {
 .breadcrumb {
   background: transparent;
   font-family: 'Roboto Condensed', sans-serif;
-  padding: 0px 20px;
+  padding: 0px 6px;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .roz-select select {
-  border: 0 !important;
   -webkit-appearance: none;
   -moz-appearance: none;
   text-overflow: "";
-  width: 200px;
+  width: 100%;
+  border: 1px solid #ced4da;
 }
 
 .roz-select select::-ms-expand {
   display: none;
+}
+
+.roz-select {
+  position: relative;
+  max-width: 200px;
+}
+
+.roz-select:after {
+  content: "\f107";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: 10px;
+  top: 8px;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #7d7b84;
 }
 
 .pagination .page-link {

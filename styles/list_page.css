@@ -16,10 +16,20 @@
   padding-top: 0;
 }
 
-.list-page .top-list-section {
+.list-page .top-list-section,
+.list-page .common-items-list {
   border-bottom: 2px solid #f3f3f3;
   padding-bottom: 20px;
   margin-bottom: 30px;
+}
+
+.list-page .top-list-section .roz-content-lists-date {
+
+  margin-left: 15px;
+}
+
+.list-page .common-items-list:last-of-type {
+  border-bottom: 0;
 }
 
 .list-page .our-activity .our-activity-list-card .card-body .more-info-btn {
@@ -28,4 +38,122 @@
 
 .list-page .our-activity .our-activity-list-card:hover .card-body .more-info-btn {
   right: 0;
+}
+
+.list-page .top-left-main-card .card {
+  border: none;
+  padding: 0;
+  margin: 20px 0 0 20px;
+  height: 390px;
+  overflow: hidden;
+}
+
+.list-page .top-left-main-card .card-img {
+  position: absolute;
+  bottom: 0;
+  transition: all 0.3s linear;
+}
+
+.list-page .top-left-main-card card:hover .card-img {
+  position: absolute;
+  bottom: 85px;
+}
+
+.list-page .top-left-main-card .card .card-body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  opacity: 0.8;
+}
+
+.list-page .top-left-main-card .card .card-body::before {}
+
+.list-page .top-left-main-card .card .card-body .card-title {
+  position: relative;
+  transition: color 0.3s linear;
+}
+
+.list-page .top-left-main-card .card:hover .card-body .card-title {
+
+  color: #790000;
+}
+
+.list-page .top-left-main-card .card .card-body {
+  position: absolute;
+  bottom: -50px;
+  transition: all .3s linear;
+  padding-bottom: 50px;
+}
+
+.list-page .top-left-main-card .card:hover .card-body {
+  position: absolute;
+  bottom: 0;
+}
+
+.card .card-title {
+  font-size: 19px;
+  position: relative;
+}
+
+.roz-title.top-list-title {
+  padding-left: 5px;
+  font-size: 38px;
+  margin: 0 0 5px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #5e5e5e;
+}
+
+.list-page .top-left-main-card .card .roz-content-lists-date {
+  margin: 0 auto 30px;
+  height: 150px;
+  min-width: 140px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding-top: 30px;
+}
+
+.list-page .top-left-main-card .roz-content-lists-date .day {
+  font-size: 46px;
+  line-height: 45px;
+}
+
+.list-page .top-left-main-card .roz-content-lists-date .month {
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.list-page .top-left-main-card .roz-content-lists-date .year {
+  font-size: 17px;
+  line-height: 37px;
+}
+
+.list-page .top-left-main-card .calendar-card .calendar-card-top {
+  height: 35px;
+}
+
+.list-page .top-left-main-card .card .card-text {
+  line-height: 19px;
+  font-size: 14px;
+  color: #7d7b84;
+  position: relative;
+}
+
+.list-page .top-left-main-card .card .btn {
+  display: inline-block;
+  position: absolute;
+  border-radius: 16px;
+  bottom: -10px;
+  right: 20px;
+  transition: all 0.4s linear;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.list-page .top-left-main-card .card:hover .btn {
+  bottom: 20px;
 }

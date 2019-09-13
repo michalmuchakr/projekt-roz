@@ -1,0 +1,69 @@
+.sidebar .card {
+  background: transparent;
+}
+
+.sidebar .accordion>.card .card-header {
+  background: #f3f3f3;
+  padding: 0;
+  border: 0;
+}
+
+.sidebar .accordion>.card .card-header .btn-link {
+  color: #5e5e5e;
+  width: 100%;
+  text-align: left;
+  padding: 10px 20px;
+  border: none;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.sidebar .accordion .card,
+.sidebar .accordion>.card .card-header .btn-link:focus,
+.sidebar .accordion>.card .card-header .btn-link:hover {
+  text-decoration: none;
+}
+
+.sidebar .accordion .card {
+  border: none;
+  border-radius: 0;
+}
+
+.sidebar .accordion .card .our-activity-list-card {
+  margin-bottom: 5px;
+}
+
+.sidebar .accordion .list-group-item {
+  background: transparent;
+}
+
+.sidebar .accordion .card .our-activity-list-card .col {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .accordion .list-group {
+  padding-top: 5px;
+}
+
+.sidebar .our-activity-list-card .card-title {
+  margin-bottom: 0 !important;
+  font-size: 16px;
+}
+
+.sidebar .our-activity-list-card .card-text {
+  font-size: 12px;
+}
+
+.sidebar .propaganda-card .our-activity-list-card .card-body {
+  height: 60px;
+}
+
+.sidebar .our-activity-list-card-ico {
+  width: 60px;
+  height: 60px;
+}
+
+.sidebar .our-activity-list-card .our-activity-list-card-ico img {
+  bottom: -17px;
+  right: -15px;
+}

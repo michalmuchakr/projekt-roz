@@ -34,11 +34,20 @@
 
   <link rel='stylesheet' href='styles/common.css'>
   <link rel='stylesheet' href='styles/list_page.css'>
+  <link rel='stylesheet' href='styles/sidebar.css'>
 </head>
 
 <body>
-  <main class='page-main-content list-page'>
+  <div class='loader'>
+    <div class='loader-content'>
+      <div class='spiner'></div>
+      <div class='loader-content-box'>
+        <img class='logo-img img-fluid' src='img/logo.png' alt='Projekt roz logo'>
+      </div>
+    </div>
+  </div>
 
+  <main class='page-main-content list-page'>
     <section class='main-page-top'>
       <div class='top-first-section col-12 mx-auto'>
         <div class='row'>
@@ -69,10 +78,12 @@
             <div class='navbar-top-section col-12 col-xl-11 mx-auto py-2'>
               <div class='row'>
                 <div class='col logo-box'>
-                  <img class='logo-img img-fluid' src='img/logo.png' alt='Projekt roz logo'>
-                  <span class='logo-txt'>
-                    rozwój opieka zaufanie
-                  </span>
+                  <a class="logo-box-link" href="index.html">
+                    <img class='logo-img img-fluid' src='img/logo.png' alt='Projekt roz logo'>
+                    <span class='logo-txt'>
+                      rozwój opieka zaufanie
+                    </span>
+                  </a>
                 </div>
 
                 <div class='patron-section'>
@@ -145,9 +156,6 @@
               </div>
             </nav>
           </div>
-          <!-- <span class='color-item-1'></span>
-          <span class='color-item-2'></span>
-          <span class='color-item-3'></span> -->
         </div>
       </div>
 
@@ -159,33 +167,51 @@
 
     <section class="list-page col-11 mx-auto mt-4">
       <div class="row">
-
-        <div class="list-content calendar our-activity col-8">
-
+        <div class="col-12">
+          <h5 class="card-title roz-title top-list-title">
+            Programy i projekty
+          </h5>
           <nav aria-label="breadcrumb col-12 px-0">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">Programy i Projekty</li>
             </ol>
           </nav>
+        </div>
+        <div class="list-content calendar our-activity col-8">
 
           <section class="top-list-section col-12 px-0">
             <div class="row">
 
-              <div class="top-left col-5">
+              <div class="top-left-main-card col-4">
 
                 <div class="card">
+                  <div class="card-img">
+                    <img class="w-100" src="img/little_prince.jpeg" alt="">
+                  </div>
+
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title mb-2">
+                      <span>
+                        Mały Książę
+                      </span>
+                    </h5>
+
+                    <p class="card-text">
+                      Placówka opiekuńczo-wychowawczą typu rodzinnego, którą od ponad 13 lat
+                      prowadzą Elżbieta i Jacek Matusiakowie, rodzice czwórki dzieci,
+                      którzy pomogli w sumie 20 dzieci i młodzieży.
+                    </p>
+
+                    <a href='#' class='top-card-button btn btn-primary btn-roz btn-roz-solid'>
+                      więcej pozytywnej propagandy
+                    </a>
                   </div>
                 </div>
 
               </div>
 
-              <div class="top-right col-7">
+              <div class="top-right col-8">
 
                 <ul class='list-group list-group-flush'>
 
@@ -206,13 +232,12 @@
                           <div class='card-body'>
                             <h5 class='card-title mb-2'>
                               <span>
-                                Mały Książę
+                                SOS porozmawiajmy o dzieciach
                               </span>
                             </h5>
                             <p class='card-text'>
-                              Placówka opiekuńczo-wychowawczą typu rodzinnego, którą od ponad 13 lat
-                              prowadzą Elżbieta i Jacek Matusiakowie, rodzice czwórki dzieci,
-                              którzy pomogli w sumie 20 dzieci i młodzieży.
+                              Cykl bezpłatnych spotkań edukacyjnych dla opiekunów zastępczych „Porozmawiajmy o
+                              dzieciach”.
                             </p>
                             <span class="more-info-btn btn btn-roz btn-roz-solid">
                               <i class="fas fa-angle-double-right"></i>
@@ -298,43 +323,6 @@
 
           <section class="common-items-list">
             <div class="row">
-              <div class="col-12">
-                <div class="row">
-                  <div class="col-8">
-                    <div class="form-group col-6">
-                      <div class="roz-select">
-                        <select id="inputState" class="form-control">
-                          <option selected>Per page</option>
-                          <option>10</option>
-                          <option>20</option>
-                          <option>50</option>
-                          <option>100</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-4">
-                    <nav aria-label="Page navigation example">
-                      <ul class="pagination">
-                        <li class="page-item">
-                          <a class="page-link" href="#" aria-label="Previous">
-                            <span class="fas fa-angle-double-left"></span>
-                          </a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                          <a class="page-link" href="#" aria-label="Next">
-                            <span class="fas fa-angle-double-right"></span>
-                          </a>
-                        </li>
-                      </ul>
-                    </nav>
-                  </div>
-                </div>
-              </div>
 
               <ul class='list-group list-group-flush col-6'>
 
@@ -459,7 +447,7 @@
                         <div class='card-body'>
                           <h5 class='card-title mb-2'>
                             <span>
-                              Mały Książę
+                              SOS porozmawiajmy o dzieciach
                             </span>
                           </h5>
                           <p class='card-text'>
@@ -543,6 +531,7 @@
                   </a>
                 </li>
               </ul>
+
             </div>
 
           </section>
@@ -753,6 +742,28 @@
                   </a>
                 </li>
               </ul>
+
+              <div class="list-navigation col-12">
+
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span class="fas fa-angle-double-left"></span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span class="fas fa-angle-double-right"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
             </div>
 
           </section>
@@ -765,27 +776,141 @@
                 <h5 class="mb-0">
                   <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
                     aria-expanded="true" aria-controls="collapseOne">
-                    Collapsible Group Item #1
+                    Pozytywna propaganda
                   </button>
                 </h5>
               </div>
 
               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#sidebar-accordion">
-                <div class="card">
-                  <div class="card-body">
-                    This is some text within a card body.
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    This is some text within a card body.
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    This is some text within a card body.
-                  </div>
-                </div>
+
+                <ul class='list-group propaganda-card list-group-flush'>
+
+                  <li class='list-group-item p-0 border-0'>
+                    <a href="#" class='our-activity-list-card card border-0'>
+                      <div class='row no-gutters'>
+                        <div
+                          class='our-activity-list-card-ico time-ico d-flex justify-content-center align-items-center'>
+                          <img src='img/icons/movie.svg' class='img-fluid' alt=''>
+                        </div>
+                        <div class='col'>
+                          <div class='card-body'>
+                            <h5 class='card-title mb-2'>
+                              Filmy
+                            </h5>
+                            <p class='card-text'>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class='list-group-item p-0 border-0'>
+                    <a href="#" class='our-activity-list-card card border-0'>
+                      <div class='row no-gutters'>
+                        <div
+                          class='our-activity-list-card-ico time-ico d-flex justify-content-center align-items-center'>
+                          <img src='img/icons/books.svg' class='img-fluid' alt=''>
+                        </div>
+                        <div class='col'>
+                          <div class='card-body'>
+                            <h5 class='card-title mb-2'>
+                              Książki
+                            </h5>
+                            <p class='card-text'>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class='list-group-item p-0 border-0'>
+                    <a href="#" class='our-activity-list-card card border-0'>
+                      <div class='row no-gutters'>
+                        <div
+                          class='our-activity-list-card-ico time-ico d-flex justify-content-center align-items-center'>
+                          <img src='img/icons/tv.svg' class='img-fluid' alt=''>
+                        </div>
+                        <div class='col'>
+                          <div class='card-body'>
+                            <h5 class='card-title mb-2'>
+                              Programy telewizyjne i radiowe
+                            </h5>
+                            <p class='card-text'>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class='list-group-item p-0 border-0'>
+                    <a href="#" class='our-activity-list-card card border-0'>
+                      <div class='row no-gutters'>
+                        <div
+                          class='our-activity-list-card-ico time-ico d-flex justify-content-center align-items-center'>
+                          <img src='img/icons/shouprints.svg' class='img-fluid' alt=''>
+                        </div>
+                        <div class='col'>
+                          <div class='card-body'>
+                            <h5 class='card-title mb-2'>
+                              Szkolenia
+                            </h5>
+                            <p class='card-text'>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class='list-group-item p-0 border-0'>
+                    <a href="#" class='our-activity-list-card card border-0'>
+                      <div class='row no-gutters'>
+                        <div
+                          class='our-activity-list-card-ico time-ico d-flex justify-content-center align-items-center'>
+                          <img src='img/icons/article.svg' class='img-fluid' alt=''>
+                        </div>
+                        <div class='col'>
+                          <div class='card-body'>
+                            <h5 class='card-title mb-2'>
+                              Artykuły
+                            </h5>
+                            <p class='card-text'>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li class='list-group-item p-0 border-0'>
+                    <a href="#" class='our-activity-list-card card border-0'>
+                      <div class='row no-gutters'>
+                        <div
+                          class='our-activity-list-card-ico time-ico d-flex justify-content-center align-items-center'>
+                          <img src='img/icons/competition.svg' class='img-fluid' alt=''>
+                        </div>
+                        <div class='col'>
+                          <div class='card-body'>
+                            <h5 class='card-title mb-2'>
+                              Konkursy
+                            </h5>
+                            <p class='card-text'>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
               </div>
             </div>
             <div class="card">
@@ -793,7 +918,7 @@
                 <h5 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="false" aria-controls="collapseTwo">
-                    Collapsible Group Item #2
+                    Wydarzenia
                   </button>
                 </h5>
               </div>
